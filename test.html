@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>统一建模语言理论测试</title>
+	<link rel="stylesheet" type="text/css" href="">
+</head>
+<body>
+<form id="test_id">
+    <header>
+        <h1>统一建模语言理论测试</h1>
+        <table>
+            <tr>
+                <td>考试科目：统一建模语言</td>
+                <td>时间:100分钟</td>
+                <td>得分:<input type="text" name="result" id="result" placeholder="分数" readonly/></td>
+            </tr>
+            <tr>
+                <td>班级：<input type="text" name="class" id="class" size="20%" placeholder="班级"/></td>
+                <td>学号: <input type="text" name="student_id" id="student_id" placeholder="学号"/></td>
+                <td>姓名: <input type="text" name="name" id="name" placeholder="姓名"/></td>
+            </tr>
+        </table>
+    </header>
+
+    <section>
+        <header><h3>一. 填空题</h3></header>
+        <ul>
+            <ol>
+                <li>UML的中文全称是：<input type="text" name="first_1" id="first_1"/></li><br/>
+                <li>对象最突出的特征是：<input type="text" name="first_2" id="first_2"/>&nbsp;
+                    <input type="text" name="first_3" id="first_3"/>&nbsp;
+                    <input type="text" name="first_4" id="first_4"/></li>
+            </ol>
+        </ul>
+    </section>
+    <header><h3>二. 选择题</h3></header>
+    <ul>
+        <ol>
+            <li>
+                UML与软件工程的关系是:( )</br>
+                <input type="radio" name="choice_1" id="choice_1_1" value="A"/>(A)UML就是软件工程</br>
+                <input type="radio" name="choice_1" id="choice_1_2" value="B"/>(B)UML参与到软件工程开发过程的几个阶段</br>
+                <input type="radio" name="choice_1" id="choice_1_3" value="C"/>(C)UML与软件工程无关</br>
+                <input type="radio" name="choice_1" id="choice_1_4" value="D"/>(D)UML是软件工程的一部分</br>
+            </li>
+            <li>
+                java语言支持：( )</br>
+                <input type="radio" name="choice_2" id="choice_2_1" value="A"/>(A)单继承</br>
+                <input type="radio" name="choice_2" id="choice_2_2" value="B"/>(B)多继承</br>
+                <input type="radio" name="choice_2" id="choice_2_3" value="C"/>(C)单继承和多继承都支持</br>
+                <input type="radio" name="choice_2" id="choice_2_4" value="D"/>(D)单继承和多继承都不支持</br>
+            </li>
+        </ol>
+    </ul>
+    <section>
+        <header><h3>三. 多选题</h3></header>
+        <ul>
+            <ol>
+                <li>
+                    用户的粒度分为以下哪三种。( )</br>
+                    <input type="checkbox" name="choice_3" id="choice_3_1" value="A"/>(A)概述级</br>
+                    <input type="checkbox" name="choice_3" id="choice_3_2" value="B"/>(B)需求级</br>
+                    <input type="checkbox" name="choice_3" id="choice_3_3" value="C"/>(C)用户目标级</br>
+                    <input type="checkbox" name="choice_3" id="choice_3_4" value="D"/>(D)子功能级</br>
+                </li>
+                <li>
+                    类图由以下那三部分组成。( )</br>
+                    <input type="checkbox" name="choice_4" id="choice_4_1" value="A"/>(A)名称(Name)</br>
+                    <input type="checkbox" name="choice_4" id="choice_4_2" value="B"/>(B)属性(Attribute)</br>
+                    <input type="checkbox" name="choice_4" id="choice_4_3" value="C"/>(C)操作(Operation)</br>
+                    <input type="checkbox" name="choice_4" id="choice_4_4" value="D"/>(D)方法(Function)</br>
+                </li>
+            </ol>
+        </ul>
+    </section>
+
+    <section>
+        <header><h3>四. 判断题</h3></header>
+        <ul>
+            <ol>
+                <li>
+                    用例图只是用于和客户交流和沟通的，用于确定需求。
+                    <input type="radio" name="judge_1" id="judge_1_1" value="T"/>对
+                    <input type="radio" name="judge_1" id="judge_1_2" value="F"/>错
+                </li>
+                <li>
+                    在状态图中，终止状态在一个状态图中允许有任意多个。
+                    <input type="radio" name="judge_2" id="judge_2_1" value="T"/>对
+                    <input type="radio" name="judge_2" id="judge_2_2" value="F"/>错
+                </li>
+            </ol>
+        </ul>
+    </section>
+
+    <section>
+        <header><h3>五. 简答题</h3></header>
+        <ul>
+            <ol>
+                <li>
+                    简述什么是模型以及模型的表现形式？
+                </li>
+                <textarea name="short_answer" id="short_answer" cols="30" rows="5"></textarea>
+            </ol>
+        </ul>
+
+    </section>
+    <input type="button" name="submit" value="submit" onClick="test()"/>
+</form>
+</body>
+<script src="test.js"></script>
+</html>
